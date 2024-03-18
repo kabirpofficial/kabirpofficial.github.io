@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:9767/'
+baseURL = 'https://n3o-d4rk3r.github.io/'
 languageCode = 'en-us'
 title = 'Explore cutting-edge technology trends and insightful guides at KabirsPlanet, your go-to tech blog for innovative solutions and expert perspectives.'
 theme = 'kabirsplanet'
