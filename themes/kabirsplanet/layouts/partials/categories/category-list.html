@@ -1,0 +1,15 @@
+<ul class="grid-list">
+  {{ $categories := .Site.Taxonomies.categories }}
+  {{ range $name, $taxonomy := $categories }}
+    {{ with index $taxonomy 0 }}
+      <li>
+        <a href="{{ printf "/categories/%s/" $name | relLangURL }}">
+          <button class="card tag-btn">
+            <img src="{{ printf "/images/categories/%s.png" $name | absURL }}" width="32" height="32" loading="lazy" alt="{{ $name }}">
+            <p class="btn-text">{{ $name }}</p>
+          </button>
+        </a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>

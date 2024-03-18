@@ -1,0 +1,7 @@
+{{ if .Content }}
+  {{ $words := .Content | plainify | len }}
+  {{ $minutes := div $words 200 }} <!-- Adjust the average words per minute as needed -->
+
+    {{ $minutes }} minute{{ if ne $minutes 1 }}s{{ end }}
+  
+{{ end }}

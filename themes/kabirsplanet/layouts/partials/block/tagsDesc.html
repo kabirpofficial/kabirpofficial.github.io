@@ -1,0 +1,6 @@
+{{ if .Params.tags }}
+    {{ $tagsLimit := 3 }} <!-- Change this number to your desired limit -->
+    {{ range first $tagsLimit .Params.tags }}
+      <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="span hover-2">#{{ . }}</a>
+    {{ end }}
+{{ end }}
