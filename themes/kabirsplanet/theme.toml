@@ -4,10 +4,10 @@ licenselink = 'https://github.com/owner/repo/LICENSE'
 description = 'Explore cutting-edge technology trends and insightful guides at KabirsPlanet, your go-to tech blog for innovative solutions and expert perspectives.'
 
 # The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
+homepage = 'https://n3o-d4rk3r.github.io/'
 
 # If you have a running demo of the theme
-demosite = 'https://owner.github.io/repo'
+demosite = 'https://n3o-d4rk3r.github.io/'
 
 [taxonomies]
 category = "categories"
