@@ -1,299 +1,506 @@
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-  <title>Resume using Tailwind CSS</title>
-</head>
-<body class="bg-hero-zig-zag">
-  <main class="font-jost hyphens-manual">
-    <!-- Page -->
-    <div class="max-w-3xl p-3 mx-auto my-auto bg-gray-100 border-4 border-gray-700 print:border-0 page print:max-w-letter print:max-h-letter print:mx-0 print:my-o lg:h-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 lg:mt-6 rounded-2xl print:bg-white">
-      <!-- Name -->
-      <header class="inline-flex items-baseline justify-between w-full mb-3 align-top border-b-8">
-        <div class="block">
-          <h1 class="mb-0 text-5xl font-bold text-gray-750">
-            Rahul Patel
-          </h1>
-          <!--Job Title -->
-          <h2 class="m-0 ml-2 text-2xl font-semibold text-gray-700 leading-snugish">
-            Front End Developer
-          </h2>
-          <!--Location -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md Kabir Hassan – Full Stack Developer | Resume</title>
+    <meta
+      name="description"
+      content="Official online resume of Md Kabir Hassan – a passionate Full Stack Developer specialized in Laravel, Vue, OpenAI, and scalable system architecture."
+    />
+    <meta
+      name="keywords"
+      content="Md Kabir Hassan, Full Stack Developer, Laravel Developer, Vue.js, OpenAI, Resume, Portfolio, Software Engineer, GitHub"
+    />
+    <meta name="author" content="Md Kabir Hassan" />
+    <link rel="canonical" href="https://github.com/kabirpofficial/" />
 
-          <h3 class="m-0 mt-2 ml-2 mb-2 font-semibold text-md text-gray-550 leading-snugish">
-            Gujarat
-          </h3>
-        </div>
-        <!-- Initials Block -->
-        <div class="justify-between px-3 mt-0 mb-5 text-3xl font-bold leading-none text-gray-200 initials-container bg-gray-750 print:bg-black" style="padding-bottom: 1.5rem; padding-top: 1.5rem;">
-          <div class="text-center initial">R</div>
-          <div class="text-center initial">P</div>
-        </div>
-      </header>
+    <!-- Open Graph Meta -->
+    <meta
+      property="og:title"
+      content="Md Kabir Hassan – Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Check out the official resume of Md Kabir Hassan, an expert in Laravel, Vue, and modern web development."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/kabirpofficial/assets/preview.jpg"
+    />
+    <meta property="og:url" content="https://github.com/kabirpofficial/" />
+    <meta property="og:type" content="website" />
 
-      <!-- Column -->
-      <div class="col-gap-16 md:col-count-2 print:col-count-2 md:h-letter-col-full print:h-letter-col-full col-fill-balance">
-        <!-- Contact Information -->
-        <section class="pb-4 mt-4 first:mt-0">
-          <div class="break-inside-avoid">
-            <section class="pb-2 mb-2 border-b-2 break-inside-avoid">
-              <ul class="list-inside pr-7">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Md Kabir Hassan – Full Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Passionate Laravel + Vue Developer with expertise in building scalable systems."
+    />
+    <meta
+      name="twitter:image"
+      content="https://github.com/kabirpofficial/assets/preview.jpg"
+    />
 
-                <li class="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700">
-                  <a href="mailto:demo@gmail.com" class="group">
-                    <span class="mr-8 text-xl font-semibold text-gray-700 leading-snugish">
-                      Email:
-                    </span>
-                    demo@gmail.com
-                    <span class="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700">
-                      ↗
-                    </span>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Kabir Hassan",
+        "alternateName": "kabirpofficial",
+        "url": "https://github.com/kabirpofficial",
+        "image": "https://github.com/kabirpofficial/assets/profile.jpg",
+        "sameAs": [
+          "https://github.com/kabirpofficial",
+          "https://linkedin.com/in/kabirpofficial",
+          "https://www.behance.net/kabirpofficial",
+          "https://twitter.com/kabirpofficial",
+          "https://www.facebook.com/kabirpofficial"
+        ],
+        "jobTitle": "Full Stack Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance / Remote"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "State University of Bangladesh"
+        },
+        "knowsAbout": [
+          "Laravel",
+          "Vue.js",
+          "Nuxt.js",
+          "JavaScript",
+          "OpenAI API",
+          "API Design",
+          "SCSS Architecture",
+          "PHP",
+          "MySQL",
+          "MongoDB",
+          "Bootstrap 5.x",
+          "Tailwind CSS",
+          "OpenCart",
+          "eCommerce",
+          "AWS (S3, SES)",
+          "Git & GitHub",
+          "Agile / Scrum",
+          "CI/CD",
+          "Architecture Design",
+          "Performance Optimization",
+          "Security Best Practices",
+          "RESTful API",
+          "C++",
+          "Java"
+        ],
+        "description": "Muhammad Kabir Hassan is an experienced Full Stack Developer specializing in Laravel, Vue.js, Nuxt.js, and modern web technologies. Skilled in building scalable, secure, and high-performance applications, with a passion for continuous learning and innovation. Proven expertise in API development, cloud infrastructure, and software architecture.",
+        "email": "mailto:youknowwho.kabir@gmail.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "professional",
+          "email": "youknowwho.kabir@gmail.com"
+        },
+        "award": [
+          "Honorable Mention Award by ICPC Global",
+          "Certified SQL Expert (2x)",
+          "Certified Java Programmer"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Software Developer",
+          "description": "Develops full stack web applications using modern technologies including Laravel, Vue.js, and cloud platforms."
+        },
+        "knowsLanguage": [
+          {
+            "@type": "Language",
+            "name": "English"
+          },
+          {
+            "@type": "Language",
+            "name": "Bengali"
+          }
+        ]
+      }
+    </script>
+
+    <link rel="stylesheet" href="https://use.typekit.net/yvs0sng.css" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <div id="site-content" class="js-site-content site-content">
+        <div class="kp-resume-root">
+          <div>
+            <div class="layout-wrap">
+              <div class="kp-resume-controls cfix">
+                <div
+                  class="form-item form-item-a js-kp_button-container kp_button__container resume-button download-button hide-tablet hide-phone form-button-wrap"
+                >
+                  <a
+                    class="form-button js-kp_button kp_button kp_button--secondary"
+                    role="button"
+                    href="https://www.behance.net/abdullahnoman/resume/pdf"
+                    tabindex="0"
+                    unselectable="on"
+                    aria-label="Print Resume Muhammad Kabir Hassan"
+                  >
+                    <span
+                      class="kp_button__icon-container kp_button__icon-container--leading"
+                    ></span>
+                    <span class="kp_button__label">Print Resume</span>
+                    <span
+                      class="kp_button__icon-container kp_button__icon-container--trailing"
+                    ></span>
                   </a>
-                </li>
-                <li class="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700">
-                  <a href="tel:+9106753674">
-                    <span class="mr-5 text-xl font-semibold text-gray-700 leading-snugish">
-                      Phone:
-                    </span>
-                    +91(123)456-7890
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </div>
-        </section>
-        <!--Summary -->
-        <section class="pb-2 pb-4 mt-4 border-b-4 first:mt-0">
-          <!-- To keep in the same column -->
-          <div class="break-inside-avoid">
-            <h2 class="mb-2 text-xl font-bold tracking-widest text-gray-700 print:font-normal">
-              SUMMARY
-            </h2>
-
-            <section class="mb-2 break-inside-avoid">
-              <p class="mt-2 leading-normal text-gray-700 text-md">
-                Front-End Developer with proven experience at Netizens Technologies in helping companies create and maintain a better code base for reusability. Passionate about learning and development .Eager to tackle more complex problems and continue to find ways to maximize user efficiency.
-              </p>
-            </section>
-          </div>
-        </section>
-        <!--Experience -->
-        <section class="pb-2 pb-4 mt-4 border-b-4 first:mt-0">
-          <!-- To keep in the same column -->
-          <div class="break-inside-avoid">
-            <h2 class="mb-2 text-xl font-bold tracking-widest text-gray-700 print:font-normal">
-              EXPERIENCE
-            </h2>
-            <!--Job 1-->
-            <section class="mb-2 break-inside-avoid">
-              <header>
-                <h3 class="text-xl font-semibold text-gray-650 leading-snugish">
-                  Front End Developer ( 2 Years )
-                </h3>
-                <p class="leading-normal text-md text-gray-550">
-                  April 2021 – April 2023 | ABC Technologies
-                </p>
-              </header>
-              <ul class="mt-2.1 text-md text-gray-700 leading-normal">
-                <li>
-                  <span class="transform -translate-y-px select-none text-gray-550">
-                    ›
-                  </span>
-                  Create Responsive Site With W3C Standards.
-                </li>
-                <li>
-                  <span class="transform -translate-y-px select-none text-gray-550">
-                    ›
-                  </span>
-                  Crafted literate, Comprehensive Source Code.
-                </li>
-                <li>
-                  <span class="transform -translate-y-px select-none text-gray-550">
-                    ›
-                  </span>
-                  Provided commentary to improve maintainability
-                </li>
-                <li>
-                  <span class="transform -translate-y-px select-none text-gray-550">
-                    ›
-                  </span>
-                  Add Site Base Animation Using Keyframe and SVG Animation
-                </li>
-              </ul>
-            </section>
-            <!-- Additional Jobs Would Go Here-->
-          </div>
-        </section>
-        <!--Education -->
-        <section class="pb-2 pb-4 mt-4 first:mt-0">
-          <!-- To keep in the same column -->
-          <div class="break-inside-avoid">
-            <h2 class="mb-2 text-xl font-bold tracking-widest text-gray-700 print:font-normal">
-              EDUCATION
-            </h2>
-            <!-- school -->
-            <section class="pb-4 mt-4 mb-4 border-b-2 break-inside-avoid">
-              <header>
-                <h3 class="flex-grow text-xl font-semibold text-gray-700 leading-snugish">
-                  University Of India
-                </h3>
-                <p class="leading-normal text-md text-gray-550">
-                  2017 – 2020 | Master Of Computer Application
-                </p>
-              </header>
-              <p class="mt-1 leading-normal text-md text-gray-650">
-                <span class="font-semibold text-gray-700 text-md leading-snugish">
-                  Major:
-                </span>
-                Computer Science
-              </p>
-              <p class="leading-normal text-gray-700 text-md">
-                <span class="font-semibold text-gray-700 text-md leading-snugish">
-                  CGPA:
-                </span>
-                5.9
-              </p>
-            </section>
-            <!--school 2 ->
-            <section class="pb-4 mt-4 mb-4 border-b-2 break-inside-avoid">
-              <header>
-                <h3 class="flex-grow text-xl font-semibold text-gray-700 leading-snugish">
-                  College For BCA
-                </h3>
-                <p class="leading-normal text-md text-gray-550">
-                  2014 – 2017 | Bechlor of Computer Applications
-                </p>
-              </header>
-              <p class="mt-1 leading-normal text-md text-gray-650">
-                <span class="font-semibold text-gray-700 text-md leading-snugish">
-                  Major:
-                </span>
-                Computer Science
-              </p>
-              <p class="mt-1 leading-normal text-md text-gray-650"></p>
-              <p class="leading-normal text-gray-700 text-md">
-                <span class="font-semibold text-gray-700 text-md leading-snugish">
-                  CGPA:
-                </span>
-                6.09
-              </p>
-            </section>
-          </div>
-        </section>
-        <!--Projects -->
-        <section class="pb-2 pb-4 mt-4 border-b-4 first:mt-0">
-          <div class="break-inside-avoid">
-            <!-- To keep in the same column -->
-            <h2 class="mb-2 text-xl font-bold tracking-widest text-gray-700 print:font-normal">
-              PROJECTS
-            </h2>
-            <!--Project 1 -->
-            <section class="pb-4 mb-4 border-b-2 break-inside-avoid">
-              <header>
-                <h3 class="text-xl font-semibold text-gray-700 leading-snugish">
-                  <a href="#!" class="group">
-                    Shipper (Transportation App)
-                  </a>
-                </h3>
-                <p class="leading-normal text-md text-gray-550">
-                  2017 | Android, Java, HTML, CSS, PHP
-                </p>
-              </header>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                Shippers fulfill an important part of the supply chain. Whether by trucking, or freight train, or air, shippers deliver both packages and cost-savings to their dedicated customers.
-              </p>
-            </section>
-            <!--Project 2-->
-            <section class="pb-4 mb-4 border-b-2 break-inside-avoid">
-              <header>
-                <h3 class="text-xl font-semibold text-gray-700 leading-snugish">
-                  <a href="#!" class="group">
-                    Speech Recognization Application
-                  </a>
-                  <span class="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700">
-                  </span>
-                </h3>
-                <p class="leading-normal text-md text-gray-550">
-                  2020 | Asp.Net,HTML,CSS
-                </p>
-              </header>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                We are working on an ASP.NET web application which requires the functionality to recognize user’s voice from client side. Is it possible to record this voice and compare it with a predefined text which is in the database at server end, in technology like Asp.net.
-              </p>
-            </section>
-            <section class="pb-4 mb-4 border-b-2 break-inside-avoid">
-              <header>
-                <h3 class="text-xl font-semibold text-gray-700 leading-snugish">
-                  <a href="#!" class="group">
-                    NGO Website
-                  </a>
-                  <span class="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700">
-                  </span>
-                </h3>
-                <p class="leading-normal text-md text-gray-550">
-                  2020 | HTML, CSS, SCSS, Javascript, SQL, PHP
-                </p>
-              </header>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                Smile Foundation, an Indian social development organization, is directly benefitting over 15 lakh children and their families every year. We have more than 400 live welfare projects on education, healthcare, livelihood, and women’s empowerment in over 2,000 remote villages and urban slums across 25 states of India.
-              </p>
-            </section>
-          </div>
-        </section>
-        <!--Begin Skills -->
-        <section class="pb-4 mt-4 first:mt-0">
-          <!-- To keep in the same column -->
-          <div class="break-inside-avoid">
-            <h2 class="mb-2 text-xl font-bold tracking-widest text-gray-700 print:font-normal">
-              SKILLS
-            </h2>
-            <!--Front-End Developer --->
-            <section class="mb-2 break-inside-avoid">
-              <header>
-                <h3 class="text-xl font-semibold text-gray-700 leading-snugish">
-                  Front-End Developer
-                </h3>
-              </header>
-
-              <div class="my-1 last:pb-1">
-                <ul class="flex flex-wrap text-sm2 leading-relaxed -mr-1.6 -mb-1 mt-2.1">
-                  <li class="text-md px-2.5 py-0.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250 mb-3">
-                    HTML5
-                  </li>
-                  <li class="text-md px-2.5 py-0.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250 mb-3">
-                    CSS3
-                  </li>
-                  <li class="text-md px-2.5 py-0.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250 mb-3">
-                    SCSS
-                  </li>
-
-                  <li class="text-md px-2.5 py-0.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250 mb-3">
-                    Tailwind.css
-                  </li>
-                  <li class="text-md px-2.5 py-0.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250 mb-3">
-                    Javascript
-                  </li>
-                  <li class="text-md px-2.5 py-0.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250 mb-3">
-                    PHP
-                  </li>
-                  <li class="text-md px-2.5 py-0.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250 mb-3">
-                    JQuery
-                  </li>
-                  <li class="text-md px-2.5 py-0.5 mr-1.6 mb-1 text-gray-200 leading-relaxed print:bg-white print:border-inset bg-gray-250 mb-3">
-                    BOOTSTRAP
-                  </li>
-                </ul>
+                </div>
               </div>
-            </section>
+
+              <div class="resume">
+                <div class="header">
+                  <div class="basic-info">
+                    <h1 class="name">Muhammad Kabir Hassan</h1>
+                    <h2 class="position">Full Stack Developer</h2>
+                    <span class="location">Dhaka, Bangladesh</span>
+                  </div>
+
+                  <div class="links">
+                    +8801717248136
+                    <a
+                      href="https://github.com/kabirpofficial"
+                      class="link"
+                      target="_blank"
+                      >github.com/kabirpofficial</a
+                    >
+                    <a
+                      href="https://www.linkedin.com/in/kabirpofficial/"
+                      class="link"
+                      target="_blank"
+                      >linkedin.com/in/kabirpofficial/</a
+                    >
+                  </div>
+                </div>
+
+                <div class="personal-statement">
+                  Passionate Full Stack Developer with 4+ years of experience in
+                  Laravel, Vue.js, RESTful APIs, and DevOps practices. Adept at
+                  designing scalable architectures, building high-performance
+                  systems, and leading cross-functional teams. Proven success in
+                  delivering production-ready systems for fintech, PTC, and SaaS
+                  platforms.<br />
+                  <br />
+                  Professional with impressive organizational, communication,
+                  and relationship-building skills, succeeded in evolving
+                  helping over 100+ Clients and 10+ Companies.
+                </div>
+
+                <div class="section">
+                  <h1 class="header">Work Experience</h1>
+
+                  <div class="module-container">
+                    <div class="module">
+                      <h2 class="organization">
+                        <a href="https://graft.live" target="_blank"
+                          >Graft.live</a
+                        >
+                      </h2>
+
+                      <h3 class="position">Sr. Full Stack Developer</h3>
+
+                      <ul class="description">
+                        <li>
+                          Developed and maintained a subscription-based SaaS
+                          platform focused on AI-driven career assistance,
+                          resume building, and proposal generation for job
+                          seekers and students in Namibia.
+                        </li>
+                        <li>
+                          Integrated OpenAI’s GPT APIs to auto-generate
+                          professional documents including proposals, product
+                          descriptions, academic statements, and personalized
+                          cover letters.
+                        </li>
+                        <li>
+                          Built a secure Laravel 12.x backend with scalable
+                          role-based access, multi-plan subscriptions, and
+                          Stripe integration.
+                        </li>
+                        <li>
+                          Engineered the frontend with Vue 3 and Nuxt, using
+                          Bootstrap 5.x and SCSS 1–9 architecture for consistent
+                          theming and responsiveness.
+                        </li>
+                        <li>
+                          Set up AWS-based deployment pipeline with S3 storage
+                          for document delivery, CloudWatch for logging, and SES
+                          for transactional emails.
+                        </li>
+                        <li>
+                          Enhanced AI usability with prompt refinement,
+                          fine-tuned workflows, and user-friendly dashboards to
+                          guide non-technical users.
+                        </li>
+                      </ul>
+
+                      <div class="time-location">
+                        <span class="time">October 2024 – May 2025</span>
+                        <span class="location">Remote / Windhoek, Namibia</span>
+                      </div>
+                    </div>
+
+                    <div class="module">
+                      <h2 class="organization">
+                        <a href="https://laurinx.com/" target="_blank"
+                          >LaurinX – Mealz</a
+                        >
+                      </h2>
+
+                      <h3 class="position">Sr. Full Stack Developer</h3>
+
+                      <ul class="description">
+                        <li>
+                          Led the end-to-end development of a SaaS platform
+                          tailored for hospitals and nursing homes to manage
+                          meals, allergies, choking hazards, and
+                          patient-specific dietary needs.
+                        </li>
+                        <li>
+                          Built a robust Laravel 12.x backend with multi-role
+                          support (Admin, Dietitian, Nurse) and secure REST APIs
+                          with token-based access and role guards.
+                        </li>
+                        <li>
+                          Developed a modular Vue 3 frontend with Bootstrap 5.x,
+                          using custom SCSS 1–9 architecture for scalable,
+                          maintainable design.
+                        </li>
+                        <li>
+                          Integrated real-time validation and alerts for
+                          allergy/diet mismatches to help prevent errors during
+                          meal preparation.
+                        </li>
+                        <li>
+                          Improved food delivery accuracy by 90%, and reduced
+                          manual error rates by 70% in early deployment trials.
+                        </li>
+                        <li>
+                          Implemented reporting dashboards and PDF generation
+                          for clinical review and compliance with government
+                          regulations.
+                        </li>
+                      </ul>
+
+                      <div class="time-location">
+                        <span class="time">March 2024 – January 2025</span>
+                        <span class="location">Remote / Dhaka, Bangladesh</span>
+                      </div>
+                    </div>
+                    <div class="module">
+                      <h2 class="organization">
+                        <a href="https://www.fibase.com/" target="_blank"
+                          >Fibase S.R.L</a
+                        >
+                      </h2>
+
+                      <h3 class="position">Jr. Full Stack Developer</h3>
+
+                      <ul class="description">
+                        <li>
+                          Collaborated with the cross-functional team to
+                          architect and develop a scalable multi-vendor
+                          eCommerce platform for Fibase Paraguay.
+                        </li>
+                        <li>
+                          Built and customized OpenCart 4.x core modules and
+                          theme layers to support custom vendor workflows and
+                          multi-level pricing rules.
+                        </li>
+                        <li>
+                          Developed several OpenCart extensions for inventory
+                          syncing, dynamic shipping rates, and real-time vendor
+                          analytics.
+                        </li>
+                        <li>
+                          Designed and implemented RESTful APIs to integrate
+                          with external logistics, payment gateways, and mobile
+                          frontends.
+                        </li>
+                        <li>
+                          Contributed to initial database schema design,
+                          relational optimization, and seed data structures for
+                          vendor onboarding.
+                        </li>
+                        <li>
+                          Led the full deployment lifecycle including module
+                          versioning, patching, and staging-to-production CI
+                          flows.
+                        </li>
+                      </ul>
+
+                      <div class="time-location">
+                        <span class="time">July 2022 – February 2023</span>
+                        <span class="location"
+                          >Asunción, Paraguay (Remote)</span
+                        >
+                      </div>
+                    </div>
+
+                    <div class="module">
+                      <h2 class="organization">
+                        <a
+                          href="https://github.com/n3o-d4rk3r/substudentms"
+                          target="_blank"
+                          >SUB StudentMS</a
+                        >
+                      </h2>
+
+                      <h3 class="position">Full Stack Developer</h3>
+
+                      <div class="description">
+                        Developed a robust and user-friendly Student Management
+                        System built on Laravel 7 and Bootstrap, utilizing Blade
+                        templating to simplify and streamline student management
+                        workflows for universities and educational institutions.
+                      </div>
+
+                      <div class="time-location">
+                        <span class="time">January 2020 - June 2020</span>
+                        <span class="location">Remote</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section">
+                  <h1 class="header">Education</h1>
+
+                  <div class="module-container">
+                    <div class="module">
+                      <h2 class="organization">
+                        <a href="http://www.ewubd.edu"
+                          >State University of Bangladesh</a
+                        >
+                      </h2>
+
+                      <h3 class="position">
+                        Bachelor of Science in Computer Science &amp;
+                        Engineering
+                      </h3>
+
+                      <div class="time-location">
+                        <span class="time">January 2020 - December 2023</span>
+
+                        <span class="location">Dhaka, Bangladesh</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section">
+                  <h1 class="header">Languages</h1>
+
+                  <div class="module-container">
+                    <div class="module">
+                      <div class="languages">
+                        <strong>Bengali</strong> (Fluent)<span class="separator"
+                          >,
+                        </span>
+                      </div>
+                    </div>
+                    <div class="module">
+                      <div class="languages">
+                        <strong>English</strong> (Conversational)<span
+                          class="separator"
+                        >
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section">
+                  <h1 class="header">Awards</h1>
+
+                  <div class="module-container">
+                    <div class="module">
+                      <h2 class="organization">
+                        <a href="http://www.hackerrank.net">HackerRank</a>
+                      </h2>
+
+                      <h3 class="position">
+                        Excellence Award in Software Engineering
+                      </h3>
+                      <h3 class="position">Certified SQL Expert (2x)</h3>
+                      <h3 class="position">Certified Java Programmer</h3>
+
+                      <div class="time-location">
+                        <span class="time">2020</span>
+                      </div>
+                    </div>
+                    <div class="module">
+                      <h2 class="organization">
+                        <a href="https://icpc.global/">ICPC Global</a>
+                      </h2>
+
+                      <h3 class="position">
+                        Honorable Mention Award – ICPC Global (2x Participation)
+                      </h3>
+
+                      <div class="time-location">
+                        <span class="time">2020</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section">
+                  <h1 class="header">Skills</h1>
+
+                  <div class="module-container">
+                    <div class="module">
+                      <div class="skills">
+                        <strong>C++</strong>
+                        <strong>Java</strong>
+                        <strong>PHP</strong>
+                        <strong>RESTful API</strong>
+                        <strong>Vue.js</strong>
+                        <strong>Nuxt.js</strong>
+                        <strong>OpenAI API</strong>
+                        <strong>JavaScript</strong>
+                        <strong>Bootstrap 5.x</strong>
+                        <strong>SCSS Architecture</strong>
+                        <strong>Tailwind</strong>
+                        <strong>MySQL</strong>
+                        <strong>MongoDB</strong>
+                        <strong>Database Design</strong>
+                        <strong>OpenCart</strong>
+                        <strong>eCommerce</strong>
+                        <strong>AWS (S3, SES)</strong>
+                        <strong>Git & GitHub</strong>
+                        <strong>Agile / Scrum</strong>
+                        <strong>CI/CD</strong>
+                        <strong>Architecture Design</strong>
+                        <strong>Performance Optimization</strong>
+                        <strong>Security Best Practices</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
-      <!-- end Column -->
-    </div>
-    <!-- end Page -->
-  </main>
-</body>
+    </main>
+  </body>
 </html>
